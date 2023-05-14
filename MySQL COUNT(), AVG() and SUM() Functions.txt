@@ -1,0 +1,34 @@
+The COUNT() function returns the number of rows that matches a specified criterion.
+
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+
+The AVG() function returns the average value of a numeric column. 
+
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
+The SUM() function returns the total sum of a numeric column. 
+
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+
+The following SQL statement finds the number of products:
+
+SELECT COUNT(ProductID)
+FROM Products;
+
+Note: NULL values are not counted.
+
+The following SQL statement finds the average price of all products:
+
+SELECT AVG(Price)
+FROM Products;
+
+The following SQL statement finds the sum of the "Quantity" fields in the "OrderDetails" table:
+
+SELECT SUM(Quantity)
+FROM OrderDetails;
